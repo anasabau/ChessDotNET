@@ -4,8 +4,8 @@ namespace Chess
 {
     class ChessBoard 
     {
-         const  uint WIDTH = 8;
-         const uint HEIGHT = 8;
+         public const  uint WIDTH = 8;
+         public const uint HEIGHT = 8;
 
         private readonly BasePiece[][] Board = new BasePiece[WIDTH][];
 

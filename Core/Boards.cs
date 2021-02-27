@@ -1,16 +1,16 @@
 using Chess.Piece;
 
-namespace Chess
+namespace Chess.Core
 {
-    class ChessBoard 
+    class Board 
     {
          public const  uint WIDTH = 8;
          public const uint HEIGHT = 8;
 
-        private readonly BasePiece[][] Board = new BasePiece[WIDTH][];
+        private readonly BasePiece[][] Pieces = new BasePiece[WIDTH][];
 
 
-        public ChessBoard()
+        public Board()
         {
             InitializeBoard();
         }
@@ -20,7 +20,7 @@ namespace Chess
         {
             for(uint i = 0; i < WIDTH; ++i)
             {
-                Board[i] = new BasePiece[HEIGHT];
+                Pieces[i] = new BasePiece[HEIGHT];
             }
         }
     }

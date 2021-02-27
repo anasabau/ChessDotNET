@@ -1,6 +1,7 @@
 
 # Ignore editor artefacts
 .vscode/
+.vs/
 
 
 # Ignore .NET 5 build artefacts

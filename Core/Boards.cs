@@ -1,4 +1,4 @@
-using Chess.Piece;
+using Chess.Model;
 
 namespace Chess.Core
 {
@@ -7,7 +7,7 @@ namespace Chess.Core
          public const  uint WIDTH = 8;
          public const uint HEIGHT = 8;
 
-        private readonly BasePiece[][] Pieces = new BasePiece[WIDTH][];
+        private readonly Piece[][] Pieces = new Piece[WIDTH][];
 
 
         public Board()
@@ -20,7 +20,7 @@ namespace Chess.Core
         {
             for(uint i = 0; i < WIDTH; ++i)
             {
-                Pieces[i] = new BasePiece[HEIGHT];
+                Pieces[i] = new Piece[HEIGHT];
             }
         }
     }

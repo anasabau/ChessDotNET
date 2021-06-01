@@ -1,23 +1,14 @@
+using Chess.Engine;
 using Chess.Model;
 
 namespace Chess.Core
 {
     class Board 
     {
-         public const  uint WIDTH = 8;
-         public const uint HEIGHT = 8;
-
-        private readonly Square[][] Pieces = new Square[WIDTH][];
-
-
-        public Board()
+        private readonly Square[][] Pieces ;
+        public Board(IGameInitializer gameInitializer)
         {
-            InitializeBoard();
-        }
-
-        //Initialize Game board for a new game
-        private void InitializeBoard()
-        {
+            Pieces = gameInitializer.Initialize();
         }
     }
 }

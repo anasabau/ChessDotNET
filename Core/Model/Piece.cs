@@ -8,7 +8,7 @@ namespace Chess.Model
         public readonly Color Color;
 
         public readonly PieceType Type;
-        protected Piece(Color color, PieceType type)
+        public Piece(Color color, PieceType type)
         {
             Color = color;
             Type = type;

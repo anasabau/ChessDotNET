@@ -4,7 +4,7 @@ namespace Chess.Model
     {
         Rook,
         King,
-        Quuen,
+        Queen,
         Bishop,
         Knight,
         Pawn

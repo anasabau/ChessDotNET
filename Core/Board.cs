@@ -7,7 +7,7 @@ namespace Chess.Core
          public const  uint WIDTH = 8;
          public const uint HEIGHT = 8;
 
-        private readonly Piece[][] Pieces = new Piece[WIDTH][];
+        private readonly Square[][] Pieces = new Square[WIDTH][];
 
 
         public Board()
@@ -18,10 +18,6 @@ namespace Chess.Core
         //Initialize Game board for a new game
         private void InitializeBoard()
         {
-            for(uint i = 0; i < WIDTH; ++i)
-            {
-                Pieces[i] = new Piece[HEIGHT];
-            }
         }
     }
 }
